@@ -1,6 +1,6 @@
-# Kubernetes Interview Troubleshooting Scenarios (Namespace-only)
+# Kubernetes Interview Troubleshooting Scenarios
 
-## Setup (namespace + optional default)
+## Setup 
 ```bash
 kubectl create namespace tech-int-prep
 # optional: set your current context to use the namespace by default
