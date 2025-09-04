@@ -25,6 +25,12 @@ kubectl get pods -n tech-int-prep -o wide
 kubectl describe pod -l app=too-big -n tech-int-prep     # read Events for "Insufficient ..."
 kubectl get events -n tech-int-prep --sort-by=.lastTimestamp | tail -n 20
 ```
+**Simple Triage**
+```bash
+kubectl get pods -o wide
+kubectl describe pod <pod NAME>     # read Events for "Insufficient ..."
+kubectl get events | tail -n 20
+```
 
 **Fix (re-apply sane requests)**
 ```bash
